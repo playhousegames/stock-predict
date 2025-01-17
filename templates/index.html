@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Prediction</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stock Predict</h1>
+
+        <form id="predictForm">
+            <label for="symbol">Stock Symbol:</label>
+            <input type="text" id="symbol" name="symbol" placeholder="e.g., AAPL" required>
+            <button type="submit">Predict</button>
+        </form>
+
+        <div id="result" class="result" style="display:none;">
+            <p><strong>Yesterday's Price:</strong> $<span id="yesterdayPrice"></span></p>
+            <p><strong>Today's Actual Price:</strong> $<span id="currentPrice"></span></p>
+            <p><strong>Today's Predicted Price:</strong> $<span id="todayPredictedPrice"></span></p>
+            <p><strong>Tomorrow's Predicted Price:</strong> $<span id="tomorrowPredictedPrice"></span></p>
+        </div>
+        <div id="error" class="error" style="display:none;"></div>
+    </div>
+</br>
+    <div id="ticker" class="stock-ticker">
+        <!-- Stock data will be displayed here -->
+    </div>
+
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

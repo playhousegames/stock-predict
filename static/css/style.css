@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #000000;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin: 8px 0;
+  color: #555;
+}
+
+input, button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.result {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.stock-ticker {
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #000000;
+  white-space: nowrap;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  animation: ticker 10s linear infinite;
+  width: max-content; /* Ensures the container width adjusts dynamically */
+}
+
+.stock-ticker div {
+  padding: 10px 20px;
+  display: inline-block;
+  margin-right: 10px; /* Adds some space between the stock items */
+}
+
+@keyframes ticker {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+
+
+.error {
+  color: red;
+}
