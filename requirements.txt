@@ -1,0 +1,5 @@
+Flask==2.1.1
+pandas==1.4.2
+numpy==1.22.3
+yfinance==0.1.74
+scikit-learn==1.0.2
